@@ -5,4 +5,5 @@ employees = [
     {"identity": "4", "name": "ben",salary: 400_000, departments: ["SALES"]},
     {"identity": "5", "name": "jin",salary: 500_000, departments: ["IT", "FINANCE"]}
 ]
-employees.sort(???).forEach(employee => console.log(employee))
+employees.sort(???)
+employees.forEach(employee => console.log(employee))
