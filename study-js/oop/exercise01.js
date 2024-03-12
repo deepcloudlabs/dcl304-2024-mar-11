@@ -3,8 +3,13 @@ let c1 = {
     x: 0,
     y: 0,
     radius: 100,
-    color: "red"
+    color: "red",
+    area: function(){
+        return this.radius * this.radius * Math.PI;
+    }
 }
+console.log(c1.area())
+console.log(c1.area)
 console.log(c1)
 console.log(c1.color)
 console.log(c1["color"])
