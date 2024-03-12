@@ -14,7 +14,8 @@ const x2 = circle2.x;
 const y2 = circle2.y;
 const radius2 = circle2.radius;
 
-let {x,y,radius} = circle2;
+let {x,y,radius,...kalan} = circle2;
 console.log(x)
 console.log(y)
 console.log(radius)
+console.log(kalan)
