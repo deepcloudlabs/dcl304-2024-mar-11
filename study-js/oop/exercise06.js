@@ -1,13 +1,13 @@
 class Account {
     // private members
     // information hiding!
-    #iban;
-    #balance;
+    #iban; // private
+    #balance; // private
     constructor(iban,balance) {
         this.#iban = iban;
         this.#balance = balance;
     }
-    balance = () => {
+    get_balance = () => {
         return this.#balance;
     }
     deposit = (amount) => {
@@ -25,4 +25,4 @@ let acc1 = new Account("tr1", 100_000);
 acc1.deposit(25_000); // 125_000
 acc1.withdraw(112_500); // 12_500
 // acc1.#balance -= 100_000_000;
-console.log(acc1.balance());
+console.log(acc1.get_balance());
