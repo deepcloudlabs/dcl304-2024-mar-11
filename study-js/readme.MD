@@ -1,4 +1,4 @@
-** JS Programming Language
+#  JS Programming Language
 1. Procedural Programming (Built-in) ✔
 2. Object-Based Programming (Built-in)  ✘
 3. Object-Oriented Programming (Built-in) ✘
