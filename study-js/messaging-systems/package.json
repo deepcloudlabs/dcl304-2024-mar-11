@@ -1,0 +1,20 @@
+{
+  "name": "messaging-systems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercise01.js",
+  "scripts": {
+    "exercise01": "node exercise01.js",
+    "exercise02": "node exercise02.js",
+    "exercise03": "node exercise03.js",
+    "exercise04": "node exercise04.js",
+    "exercise05": "node exercise05.js"
+  },
+  "dependencies": {
+    "ws": "^8.16.0",
+    "kafkajs": "2.2.4",
+    "amqplib": "^0.10.3",
+    "mongoose": "^8.2.1"
+  },
+  "private": true
+}
