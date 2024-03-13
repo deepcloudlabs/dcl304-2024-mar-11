@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Binance</title>
+    <script type="application/ecmascript">
+        async function retrieveTickers(){
+            const BINANCE_URL = "https://api.binance.com/api/v3/ticker/price?symbol=";
+            const ticker1 = await fetch(BINANCE_URL.concat("BTCUSDT")).then(res => res.json());
+            const ticker2 = await fetch(BINANCE_URL.concat("REQETH")).then(res => res.json());
+            const ticker3 = await fetch(BINANCE_URL.concat("POWRETH")).then(res => res.json());
+            const ticker4 = await fetch(BINANCE_URL.concat("VIBETH")).then(res => res.json());
+            return [ticker1, ticker2, ticker3, ticker4];
+        }
+        retrieveTickers().then(tickers => console.log(tickers));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
